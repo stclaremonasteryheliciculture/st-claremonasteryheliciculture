@@ -25,14 +25,13 @@
       min-height: 100vh;
     }
 
-    /* ---------- HEADER / HOMEPAGE HERO ---------- */
+    /* ---------- HERO / HOMEPAGE ---------- */
     .hero {
       background-color: #4a2c1b;
       background-image: radial-gradient(circle at 20% 30%, #5e3a24 0%, #4a2c1b 70%);
       padding: 3rem 2rem 4rem;
       text-align: center;
       border-bottom: 3px solid #b58b5a;
-      position: relative;
     }
 
     .hero-logo {
@@ -73,7 +72,7 @@
       margin-bottom: 2rem;
     }
 
-    /* Holistic navigation buttons */
+    /* Holistic nav buttons */
     .nav-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -117,7 +116,7 @@
       box-shadow: 0 3px 0 #1f130b;
     }
 
-    /* ---------- MAIN CONTENT ---------- */
+    /* ---------- MAIN ---------- */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -143,7 +142,7 @@
       font-size: 2rem;
     }
 
-    /* Snail gallery */
+    /* Icon cards (replacing snail images) */
     .snail-gallery {
       display: flex;
       flex-wrap: wrap;
@@ -155,7 +154,7 @@
     .snail-card {
       background: #2e1f14;
       border-radius: 2rem;
-      padding: 1.5rem 1.5rem 1rem;
+      padding: 2.5rem 2rem;
       box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5), inset 0 0 0 1px #b58b5a;
       text-align: center;
       width: 240px;
@@ -166,18 +165,15 @@
       transform: scale(1.03);
     }
 
-    .snail-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 1.5rem;
-      border: 2px solid #d4af7a;
-      background: #4a2c1b;
+    .snail-card .card-icon {
+      font-size: 4.5rem;
+      color: #dbbd97;
+      margin-bottom: 1.2rem;
+      display: block;
     }
 
     .snail-card p {
-      margin-top: 1rem;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
       color: #eedbc9;
       display: flex;
       align-items: center;
@@ -399,7 +395,7 @@
 </head>
 <body>
 
-  <!-- ================= HOMEPAGE / HERO ================= -->
+  <!-- ================= HERO / HOMEPAGE ================= -->
   <header class="hero">
     <img src="St. Clare Monastery Heliciculture.png" alt="St. Clare Monastery Heliciculture Logo" class="hero-logo">
     <h1><i class="fas fa-church"></i> St. Clare Monastery</h1>
@@ -416,17 +412,20 @@
 
   <main class="container">
 
-    <!-- ================= SNAIL GALLERY ================= -->
+    <!-- ================= SNAIL CARDS (icon-based, no images) ================= -->
     <section id="snails">
       <h2 class="section-title"><i class="fas fa-seedling"></i> Our Snails</h2>
       <div class="snail-gallery">
         <div class="snail-card">
-          
-          <img src="Snail pic2.png" alt="Frozen snails packaged">
+          <i class="fas fa-dove card-icon"></i>
+          <p><i class="fas fa-dove"></i> Live Snails</p>
+        </div>
+        <div class="snail-card">
+          <i class="fas fa-snowflake card-icon"></i>
           <p><i class="fas fa-snowflake"></i> Frozen Snails</p>
         </div>
         <div class="snail-card">
-          <img src="Snail pic3.png" alt="Healthy heliciculture snails">
+          <i class="fas fa-heart card-icon"></i>
           <p><i class="fas fa-heart"></i> Premium Quality</p>
         </div>
       </div>
@@ -513,4 +512,4 @@
   </footer>
 
 </body>
-        </html>
+</html>
